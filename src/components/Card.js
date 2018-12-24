@@ -7,7 +7,7 @@ class Card extends Component{
     }
 
     componentDidMount(){
-        axios.get('https://api.themoviedb.org/3/discover/movie?api_key=a3def4df6b53084196d9d17e076779d2&page=1+2')
+        axios.get('https://api.themoviedb.org/3/discover/movie?api_key=a3def4df6b53084196d9d17e076779d2&page=')
             .then(data =>{
                    this.setState({
                        data:data.data.results
